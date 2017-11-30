@@ -2,7 +2,7 @@ title:             Adam's Blog
 email:             yadongl1@uci.edu
 description:       Weekly blog for paper reading in Fall quarter 2017. Tested site under construction. 
 author:            Adam Lu
-baseurl:           /jekyll-blog/
+baseurl:           /adam-blog/
 url:               "http://adamlu123.github.io/adam-blog"
 navbar: true
 # Social Profiles
