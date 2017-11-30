@@ -1,0 +1,273 @@
+\documentclass{beamer}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{array} % needed for \arraybackslash
+\usepackage{graphicx}
+\usepackage{adjustbox}
+ \usetheme{Goettingen}
+%Information to be included in the title page:
+\title{Common Statistical Misinterpretations}
+\subtitle{Part I}
+
+\author{Yadong Lu}
+\institute{Univeristy of California, Irvine}
+% \date{Nov 19, 2017}
+\date{\today}
+ 
+ 
+\begin{document}
+ 
+
+
+\frame{\titlepage}
+ 
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{Author}
+\begin{frame}
+\frametitle{Author:}
+% \tableofcontents[currentsection]
+\begin{tabular}{p{.4\textwidth} p{.6\textwidth}}
+\adjincludegraphics[width=.8\linewidth,valign=t]{pic1.jpg}
+&
+\raggedright\arraybackslash{Sander Greenland (born January 16, 1951) is an American statistician and epidemiologist known for his contributions to epidemiologic methods, meta-analysis, Bayesian inference and causal inference, among other topics. }
+\end{tabular}
+Educated at the University of California, Berkeley and the University of California, Los Angeles (UCLA), he has held a professorship in epidemiology at UCLA School of Public Health since 1989, and additionally a professorship in statistics at UCLA College of Letters and Science since 1999.
+\end{frame}
+
+
+\section{Motivation and Methods}
+
+
+\begin{frame}
+\frametitle{Motivation and Methods:}
+
+\begin{block}{Motivation}
+\begin{itemize}
+ \item Epidemic of shortcut definitions and interpretations that are simple, but wrong, disatrously.
+ \item Misinterpretation and abuse: statistical tests, confidence intervals, statistical power. 
+ \item Some journal bans all statistical tests and confidence intervals
+\end{itemize}
+\end{block}
+\pause
+
+\begin{block}{Methods}
+\begin{itemize}
+ \item<1-> Explain the meaning of significance tests, statistical power in a general way. 
+ \item<2-> Review 25 common misconceptions 
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\section{Understanding Statistical Model, Hypothesis and Tests}
+\begin{frame}
+\frametitle{Understanding Statistical Model, Hypothesis and Tests}
+
+\begin{block}{Statistical Model}
+\begin{itemize}
+ \item Mathematical representation of data variability 
+ \item A set of assumptions is embodied in a model. 
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Problems:}
+\begin{itemize}
+ \item Models incorporate unrealistic or unjustified assumptions. 
+ \item Hard to define scope of the model. (overfitting)
+ \item Model in a compressed form: lead to unremarked assumptions (Think about poisson model)
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Understanding Statistical Model, Hypothesis and Tests}
+\begin{block}{Statistical Hypothesis Tests}
+\begin{itemize}
+ \item Determine whether a particular effect has a specific size.
+ \item Null hypothesis: target effect size has "null" value or zero effect. 
+ \item Can also test whether the effect size fall in a specific range. 
+ \item Focusing \textit{only} on null hypothesis test: lead to misunderstanding. Remeber we can test all kinds of target hypothesis rather just the "null" hypothesis. 
+\end{itemize}
+\end{block}
+
+\begin{block}{}
+
+\end{block}
+
+\end{frame}
+
+\section{Uncertainty, probability, and statistical significance}
+\begin{frame}
+\frametitle{Uncertainty, probability, and statistical significance}
+
+\begin{block}{Refined Goal of Statistical Analysis}
+Evaluation of certainty or uncertainty regarding the size of an effect. 
+\end{block}
+\pause
+
+\begin{block}{Statistics vs. ML}
+\begin{itemize}
+\item Machine learning care less about the evaluation of the effect. 
+\item Goal: use the effect (association) to produce prediction(MLP), or generation(Generative Adversarial Net).
+\end{itemize}
+\end{block} 
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Uncertainty, probability, and statistical significance}
+
+\begin{block}{Probability: in Frequentist World}
+\begin{itemize}
+\item In frequentist: "Probability" refers not to hypothesis, but to quantities that are hypothetical frequencies of data patterns under an assumed statistical model
+\item Think about "likelihood" : refer to the probability of the data given parameters, \textbf{not} the probability of the parameter taking on a given value.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Uncertainty, probability, and statistical significance}
+
+\begin{block}{P Value}
+\begin{itemize}
+\item The probability, under the null hypothesis, of obtaining a result equal to or more extreme than what was actually observed. 
+ \item It is a hypothetical frequency, also known as the "observed significance level" for the test hypothesis
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Traditional Definition:}
+Focusing on null hypothesis, treating all other assumptions to be correct. 
+\end{block}
+\pause
+\begin{block}{A More General View}
+P value is  a statistical summary of the compatibility
+between the observed data and what we would predict or
+expect to see if we knew the entire statistical model (all the
+assumptions used to compute the P value) were correct.
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Uncertainty, probability, and statistical significance}
+
+
+\begin{block}{Interpretation:}
+\begin{itemize}
+
+ \item<1-> It is true that the smaller the P value, the more unusual
+the data would be if \textit{every} single assumption were correct;
+but a very small P value \textit{does not} tell us which assumption
+is incorrect. 
+\item<2-> For example, the P value may be very small
+because the targeted hypothesis is false; but it may instead
+(or in addition) be very small because the some assumptions
+were violated
+
+ \item<3-> Conversely, a large P value indicates
+only that the data are not unusual under the model,
+but does not imply that the model or any aspect of it (such
+as the targeted hypothesis) is correct;
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Uncertainty, probability, and statistical significance}
+
+\begin{block}{Interpretation(contd):}
+\begin{itemize}
+\item The general definition of a P value may help one to
+understand why statistical tests tell us much less than what
+many think they do. 
+\item Need assurance of every other assumptions in the model is correct - an assurance that is
+lacking in far too many studies.
+\end{itemize}
+\end{block}
+
+\pause
+
+\begin{block}{P Value  Significance Level:}
+\begin{itemize}
+\item Significance level ($\alpha$ level): often used to refer to the "cut-off", fixed, part of study design.
+\item P value: a number computed from the data. 
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+% \begin{frame}
+% \frametitle{Common misinterpretations of single P values}
+% \begin{block}{The P value is the probability that the test
+% hypothesis is true; for example, if a test of the null
+% hypothesis gave P = 0.01, the null hypothesis has
+% only a $1 \%$ chance of being true; if instead it gave
+% P = 0.40, the null hypothesis has a $40 \%$ chance of
+% being true}
+% The P value assumes the test
+% hypothesis is true—it is not a hypothesis probability
+% and may be far from any reasonable probability for the
+% test hypothesis.
+% \end{block}
+
+
+% \end{frame}
+
+
+% \begin{frame}
+% \frametitle{Common misinterpretations of single P values}
+% \begin{block}{The P value for the null hypothesis is the probability
+% that chance alone produced the observed association;
+% for example, if the P value for the null
+% hypothesis is 0.08, there is an 8 % probability that
+% chance alone produced the association}
+
+% \end{block}
+% \end{frame}
+\section{Moving from Tests to Estimations}
+
+\begin{frame}
+\frametitle{Moving from Tests to Estimations}
+\begin{itemize}
+\item we can vary the test hypothesis (or effect size) to see how P value changes. (eg: we can test $H_{0}: \mu = 0,0.5, 1$ etc) \pause
+\item Effect sizes whose test produced $P > 0.05$ will define of range of sizes that would be considered more compatible with data than sizes outside the range. (this determines a range for $\mu$) 
+\item The range corresponds to $95\%$ confidence interval. \pause
+\item Confidence interval can be thus be seen as a convenient way of summarizing the results of hypothesis tests for many effect sizes. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+% \frametitle{}
+\begin{center}
+\Huge Thank you!
+\end{center}
+
+\end{frame}
+
+
+% \begin{frame}
+% \frametitle{}
+
+% \end{frame}
+
+
+% \begin{frame}
+% \frametitle{}
+
+% \end{frame}
+
+
+
+ 
+\end{document}

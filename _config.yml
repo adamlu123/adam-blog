@@ -1,0 +1,19 @@
+title:             Adam's Blog
+email:             yadongl1@uci.edu
+description:       Weekly blog for paper reading in Fall quarter 2017. Tested site under construction. 
+author:            Adam Lu
+baseurl:           /jekyll-blog/
+url:               "http://adamlu123.github.io/jekyll-blog"
+navbar: true
+# Social Profiles
+twitter_username:  adamlu28
+github_username:   adamlu123
+facebook_username: adam.lu.587
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

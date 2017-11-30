@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Author}{3}{0}{1}
+\beamer@sectionintoc {2}{Motivation and Methods}{4}{0}{2}
+\beamer@sectionintoc {3}{Understanding Statistical Model, Hypothesis and Tests}{6}{0}{3}
+\beamer@sectionintoc {4}{Uncertainty, probability, and statistical significance}{9}{0}{4}
+\beamer@sectionintoc {5}{Moving from Tests to Estimations}{20}{0}{5}
