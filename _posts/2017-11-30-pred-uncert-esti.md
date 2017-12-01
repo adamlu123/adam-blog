@@ -1,6 +1,7 @@
 ---
 title: Predictive Uncertainty Estimation
 Author: Adam
+background: '/img/bg-index.jpg'
 ---
 
 Recently, I come across a nice paper: [Simple and Scalable Predictive Uncertainty
