@@ -1,0 +1,173 @@
+\documentclass[margin,line]{res}
+
+
+% \documentclass[line,mm]{res}
+\usepackage{hyperref}
+\usepackage{url}
+% \usepackage[compact]{titlesec}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\textheight = 700pt
+\itemsep=0in
+\parsep=0in
+\topmargin=-0.3in
+\topskip=0in
+ 
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+% \usepackage{anysize}
+% \marginsize{0.4in}{0.4in}{0.4in}{0.4in}
+% \usepackage[bottom=0.4in,top=0.5in]{geometry}
+%\usepackage[bottom=3cm]{geometry}
+\begin{document}
+
+\name{\ Yadong  Lu } % \hfill For Applied Statistics M.S. Fall 2016. U-M ID:25172289 %\hfill {\em \today}可以加上今天的日期
+
+\begin{resume}
+\section{\sc Contact Information}
+
+\vspace{.05in}
+\begin{tabular}{p{3.5in}p{3in}}
+2243 Donald Bren Hall & {Phone:}  (518)334-4626\\University of California, Irvine 
+& {E-mail:}  yadongl1@uci.edu\\
+
+\end{tabular}
+
+
+\section{\sc Interests}
+  Deep learning algorithms with applications to images and high energy physics, Causal inference.
+
+\section{\sc Education}
+{\bf University of California, Irvine}, Statistics, 2nd year PhD student \hfill   2016.9-now \\
+GPA: 3.97/4.0, Advisor: Pierre Baldi \\
+{\bf Sichuan University}, Mathematics,  B.S. \hfill  2012 - 2016\\
+Honor Class, 4 year National Pilot Program Fellowship receipient. \\ 
+% GPA: 3.72/4.0 (3rd in ranking)\\ %\vspace*{-.1in}
+ %\hfill(GPA 3.70/4.0 (Grade in NUS included), Ranked 4/155) \\
+{\bf National University of Singapore},  Applied Math \hfill   2014 - 2015 \\
+Temasek Foundation Scholarship, one-year study abroad programme.
+\vspace{2pt}
+ %\hfill(GPA 4.43/5.0) \\%($A{+}$, 1 $A$ and 2 $A{-}s$)\\
+%{\bf Yale University}, Department of statistics \hfill To be started from Sept 2016\\
+%\hfill M.S. of Statistics.
+%\hfill PhD Candidate.
+\section{\sc Technical Skills}
+{\bf Programming Languages}:  Fluent: Python, R; Intermidiate: Matlab, C, SAS\\
+{\bf Deep Learning Related}: Tensorflow, Keras, Theano, Pandas, Linux
+\section{\sc Test Scores}
+{\bf GRE}: Quantitative Reasoning: 170/170, Verbal Reasoning: 157/170% {\bf TOEFL}: 106/12
+\section{\sc Research and Intern Experiences}
+%%%%%%%%%%%%%%%%%%%%%%
+{\bf Sherpa: Hyperparameter Tuning Machine for Neural Networks}    \hfill{2017.9-now}
+\begin{list2}
+% \item Software development at Baldi's Lab. 
+\item Sherpa aims to provide a fast and parallel automatic hyperparameter search framework for training various kinds of deep neural networks. 
+\item Lead the development of bayesian optimization algorithms for Sherpa. 
+\end{list2}
+
+
+{\bf Antihydrogen Particle Detection by Deep Neural Network}    \hfill{2017.6-now}
+\begin{list2}
+\item A joint project with  ASACUSA at CERN.
+\item Developed a package for analyzing over 3 million real annilation events generated from ASACUSA experiments. Wrote algorithms to efficiently separated the rising edges within the data.
+\item Propsed resnet-like deep neural network as a novel technique to distinguish antimatter signals from backgrond noise. Our model outperforms the existing vertex construction algorithm.
+\end{list2}
+
+{\bf Deep Target Algorithms and Random Backpropagation}    \hfill{2016.9-12}
+\begin{list2}
+\item With Prof. Pierre Baldi at UCI.
+\item Developed and implemented several deep target learning algorithms and Random Backpropagation (RBP) Rules in both Theano and Tenserflow. Tested the algorithms on several benchmark datasets using multiple GPUs.
+\item Reseach on the proof of convergence properties of RBP algorithms. Constantly explore and evaluate new RBP rules.
+\end{list2}
+
+
+{\bf Quantative Trading Algorithms for Achieving Alpha}       \hfill{2016.3-6}
+\begin{list2}
+\item Internship at Huaxi Futures Co., Ltd. 
+%\item With Prof. Chang Liu, at Sichuan University
+%\item Stock portfolios were estabished in SSE by sorting them into quintiles according to influential factors such as EPS and money inflow rate.
+\item Historical data within 3000 trading days was crawled from web using python to backtest trading strategies. Developed and implemented several algorithms to select profitable factors as trading strategies. 
+\item Improved the automatic trading system by adding new strategies.
+\end{list2}
+
+\section{\sc Teaching and Presentation}
+{\bf Teaching Assistant}       \hfill{2016.9-now}
+\begin{list2}
+\item Serving as teaching assistant for Stats 67 in Spring 2016, and Stats 7 in Fall 2017.
+\end{list2}
+
+
+{\bf Bayesian Causality} \hfill{2017.12}
+\begin{list2}
+\item Proposed a bayesian framework for causal relation computation. 
+\item Present a poster in the workshop: From 'What If?' To 'What Next?' : Causal Inference and Machine Learning for Intelligent Decision Making, NIPS 2017
+\end{list2}
+
+
+%\item With Prof. Chang Liu, at Sichuan University
+% %\item Stock portfolios were estabished in SSE by sorting them into quintiles according to influential factors such as EPS and money inflow rate.
+% \item Historical data within 3000 trading days was crawled from web using python to backtest trading strategies. Developed and implemented several algorithms to select profitable factors as trading strategies. 
+% \item Improved the automatic trading system by adding new strategies.
+% \end{list2}
+
+% {\bf EGARCH Model with Leverage Effect} \hfill{2015.10-2016.4}
+% \begin{list2}
+% \item With Dr. Liang Wu from Brown University.
+% \item This paper find empirical evidence of Anti-leverage effect in Chinese stock market.  An analytical result regarding approximation of option prices is solved. Algorithms based on the result is developed and implemented.  
+% \item Implied volatility is calculated using the option prices solved by the theorem in this paper, where it showes anti-leverage effect.
+% \end{list2}
+
+
+
+% {\bf Optimal Search Model Updated by Bayesian Method} \hfill {2015.11}
+
+
+% \begin{list2}
+% \item This paper aims at searching for crashed planes in ocean area. Major work include: %incorporation of environmental data,
+%  simulation of crash trajectory and optimal search method using Dinkelbach's algorithm. %The probability density map of debris location is updated by Bayesian method.
+% \item The result shows that the systematic plan developed using various types of searching planes helps to find the flight AF477 within 2 hours.
+% \end{list2}
+
+
+%\end{list2}
+%{\bf Statistical Analysis on EEG and fMRI data} \hfill{in Progress}
+%%%%%%
+% \section{\sc Contributed Talks}
+
+% {\bf  Seminars on Markov Chain Monte Carlo Methods} \hfill{ 2015.9-10}
+
+% \begin{list2} 
+% \item Department of Mathematics, Sichuan University
+% \item Topics covered: Generation of random variable; The Metropolis Hastings Algorithm; The Two Stage Gibbs Sampler.
+% \end{list2}
+\section{\sc Hobbies} I am a competitve Go player (4th dan).
+
+
+% \section{\sc Awards and scholarships}
+% \textbullet \hspace{0.05in} Outstanding Undergraduate Student Award, Sichuan University (2016)\\ 
+% \textbullet \hspace{0.05in} Honorable Mention, Mathematical Contest in Modeling (MCM), COMAP, U.S. (2015) \\
+% \textbullet \hspace{0.05in} Scholarship of ‘Temasek Foundation, National University of Singapore (2014)\\
+% \textbullet \hspace{0.05in}  Fellowship of Chinese National Pilot Project for Fostering Top-notch Students in Fundamental Science, Sichuan University (2013-2016) \\
+% \textbullet \hspace{0.05in} First Prize Award of Mathematical Modeling Competition, Sichuan University (2013)\\
+
+
+
+\end{resume}
+\end{document}
+
+
+
+
